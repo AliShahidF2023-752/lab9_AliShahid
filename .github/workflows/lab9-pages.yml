@@ -21,8 +21,7 @@ jobs:
           node-version: 20
 
       - run: npm ci
-      - run: npm run build
-      - run: npm run export
+      - run: npm run build   # ✅ This automatically generates the static 'out/' folder
 
       - uses: actions/upload-pages-artifact@v3
         with:
